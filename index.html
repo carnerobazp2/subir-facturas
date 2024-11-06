@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subir Facturas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Menú de navegación -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Subir Facturas</a></li>
+        <li><a href="#">Historial</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenedor principal -->
+  <main>
+    <section class="upload-section">
+      <h1>Subir Factura</h1>
+      <form id="uploadForm">
+        <label for="fileInput" class="upload-label">Selecciona tu factura</label>
+        <input type="file" id="fileInput" accept=".pdf,.jpg,.jpeg,.png" required>
+        <button type="submit" class="upload-button">Subir</button>
+        <div id="filePreview" class="file-preview"></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
